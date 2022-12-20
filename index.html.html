@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn link for fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- slider js link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- css link file  -->
+    <link rel="stylesheet" href="sass/best-seller.css">
+    <link rel="stylesheet" href="../sass/header.css">
+    <link rel="stylesheet" href="../sass/footer.css">
+    <title>Girls Fashion</title>
+</head>
+
+<body>
+
+    <!-- header section  -->
+
+    <section class="header-section">
+
+        <header>
+            <div class="top-section">
+                <div class="top-head">
+                    <a href="" class="logo">Redtag<span>.</span> </a>
+                    <div class="icons-mbl">
+                        <div class="hide-icons">
+                            <a href="">
+                                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#account"
+                                    alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#shopping-bag"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <form action="">
+                        <input type="search" id="search-bar" placeholder="search">
+                        <label for="search-bar" class="fas fa-search"></label>
+                    </form>
+
+                    <div class="icons-pc">
+                        <a href="/">
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#account"
+                                alt="">
+                        </a>
+                        <a href="/">
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                alt="">
+                        </a>
+                        <a href="/">
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#shopping-bag"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-head">
+                <div class="menu-btn">
+                    <a class="btn" href="index.html">Women</a>
+                    <a class="btn" href="menfashion.html">Men</a>
+                    <a id="active" class="btn" href="girlsfashion.html">Girls</a>
+                    <a class="btn" href="boysfashion.html">Boys</a>
+                    <a class="btn" href="homewarefashion.html">Homeware</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- navbar dropdown section  -->
+
+        <section class="navbar">
+
+            <nav class="wrapper">
+                <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
+                <ul class="tabs-box">
+                    <li onclick="myNewIn()" class="tab">New In
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myBestSeller()" class="tab">Best Sellers
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myWinter()" class="tab">Winter
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myBaby()" class="tab">Baby (0-2yrs)
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myJunior()" class="tab">Junior (2-8yrs)
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="mySenior()" class="tab">Senior (8-14yrs)
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myCollection()" class="tab">Collection
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myShoes()" class="tab">Shoes
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myAccessories()" class="tab">Accessories
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myFragrance()" class="tab">Fragrance
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myHotOffer()" id="hot-offer" class="tab">Hot Offers
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                </ul>
+                <div class="icon"><i id="right" class="fa-solid fa-angle-right"></i></div>
+            </nav>
+
+            <!--nav dropdown items section  -->
+
+            <section class="nav-dropdown">
+
+                <!-- NewIn menu list  -->
+
+                <div id="newIn" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">ALL</a></li>
+                            <li><a href="">Baby (0-2yrs)</a></li>
+                            <li><a href="">Junior (2-8yrs)</a></li>
+                            <li><a href="">Senior (8-14yrs)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- best seller menu list  -->
+
+                <div id="best-seller" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">ALL</a></li>
+                            <li><a href="">Baby (0-2yrs)</a></li>
+                            <li><a href="">Junior (2-8yrs)</a></li>
+                            <li><a href="">Senior (8-14yrs)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- winter menu list  -->
+
+                <div id="winter" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">ALL</a></li>
+                            <li><a href="">Clothing</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li><a href="">Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- baby menu list  -->
+
+                <div id="baby" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shops all clothing</a></li>
+                            <li><a href="">New In</a></li>
+                            <li><a href="">Bodysuits & Jumpsuits</a></li>
+                            <li><a href="">Sweateshirts & Hoodies</a></li>
+                            <li><a href="">Kintwear</a></li>
+                            <li><a href="">Dresses</a></li>
+                            <li><a href="">Jeans & Jeggings</a></li>
+                            <li><a href="">Trouser & Leggings</a></li>
+                            <li><a href="">Shorts & Skirts</a></li>
+                            <li><a href="">Tops & T-Shirts</a></li>
+                            <li><a href="">Rompers</a></li>
+                            <li><a href="">Joggers</a></li>
+                            <li><a href="">Coats</a></li>
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Booties & Socks</a></li>
+                            <li><a href="">Blankets & Comforters</a></li>
+                            <li><a href="">Socks & Tights</a></li>
+                            <li><a href="">Bibs & Caps</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- junior menu list  -->
+
+                <div id="junior" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shops all clothing</a></li>
+                            <li><a href="">New In</a></li>
+                            <li><a href="">Dresses & Jumpsuits</a></li>
+                            <li><a href="">Sweateshirts & Hoodies</a></li>
+                            <li><a href="">Kintwear</a></li>
+                            <li><a href="">Dresses</a></li>
+                            <li><a href="">Jeans & Jeggings</a></li>
+                            <li><a href="">Trouser & Leggings</a></li>
+                            <li><a href="">Shorts & Skirts</a></li>
+                            <li><a href="">Tops & T-Shirts</a></li>
+                            <li><a href="">Joggers</a></li>
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Swimwear</a></li>
+                            <li><a href="">Sets</a></li>
+                            <li><a href="">Socks & Tights</a></li>
+                            <li><a href="">Underwear</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- senior menu list  -->
+
+                <div id="senior" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shops all clothing</a></li>
+                            <li><a href="">New In</a></li>
+                            <li><a href="">Dresses & Jumpsuits</a></li>
+                            <li><a href="">Sweateshirts & Hoodies</a></li>
+                            <li><a href="">Kintwear</a></li>
+                            <li><a href="">Dresses</a></li>
+                            <li><a href="">Jeans & Jeggings</a></li>
+                            <li><a href="">Trouser & Leggings</a></li>
+                            <li><a href="">Shorts & Skirts</a></li>
+                            <li><a href="">Tops & T-Shirts</a></li>
+                            <li><a href="">Joggers</a></li>
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Swimwear</a></li>
+                            <li><a href="">Sets</a></li>
+                            <li><a href="">Socks & Tights</a></li>
+                            <li><a href="">Underwear</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- collection menu list  -->
+
+                <div id="collection" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shop all collection</a></li>
+                            <li><a href="">Best Sellers</a></li>
+                            <li><a href="">Pretty in Pink</a></li>
+                            <li><a href="">Character</a></li>
+                            <li><a href="">Dress in Style</a></li>
+                            <li><a href="">Activewear</a></li>
+                            <li><a href="">Denimwear</a></li>
+                            <li><a href="">Basics</a></li>
+                            <li><a href="">Festive Collection</a></li>
+                            <li><a href="">Sets</a></li>
+                            <li><a href="">Swimwear</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- shoes menu list  -->
+
+                <div id="shoes" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shop all shoes</a></li>
+                            <li><a href="">New In</a></li>
+                            <li><a href="">New Born (0-18mnths)</a></li>
+                            <li><a href="">Infant (1-3yrs)</a></li>
+                            <li><a href="">Junior (3-5yrs)</a></li>
+                            <li><a href="">Senior (5-14yrs)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- accessories menu list  -->
+
+                <div id="accessories" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shop all accessories</a></li>
+                            <li><a href="">New In</a></li>
+                            <li><a href="">Baby Accessories</a></li>
+                            <li><a href="">Car Seats & Strollers</a></li>
+                            <li><a href="">Bags & Wallets</a></li>
+                            <li><a href="">Caps & Hats</a></li>
+                            <li><a href="">Scarves</a></li>
+                            <li><a href="">Hair Accessories</a></li>
+                            <li><a href="">Jewellery</a></li>
+                            <li><a href="">Sunglasses</a></li>
+                            <li><a href="">Toys</a></li>
+                            <li><a href="">Watches & Wrist Bands</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- perfume & frangrance menu list  -->
+
+                <div id="fragrance" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shop all perfume & Frangrance</a></li>
+                            <li><a href="">Perfumes</a></li>
+                            <!-- <li><a href="">Limited Collection</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- hot offer menu list  -->
+
+                <div id="hotOffer" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shops all sale</a></li>
+                            <li><a href="">Baby (0-2yrs)</a></li>
+                            <li><a href="">Junior (2-8yrs)</a></li>
+                            <li><a href="">Senior (8-14yrs)</a></li>
+                            <li><a href="">Clothing</a></li>
+                            <li><a href="">Shoes</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li><a href="">SAR 10</a></li>
+                            <li><a href="">SAR 15</a></li>
+                            <li><a href="">SAR 20</a></li>
+                        </ul>
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">all</a></li>
+                            <li><a href="">Women</a></li>
+                            <li><a href="">Men</a></li>
+                            <li><a href="">Boys</a></li>
+                            <li><a href="">Girls</a></li>
+                            <li><a href="">Homewear</a></li>
+                        </ul>
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">Buy 2 save more</a></li>
+                            <li><a href="">All</a></li>
+                            <li><a href="">2 FOR 37</a></li>
+                            <li><a href="">2 FOR 49</a></li>
+                            <li><a href="">2 FOR 69</a></li>
+                            <li><a href="">2 FOR 79</a></li>
+                            <li><a href="">2 FOR 89</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </section>
+
+    <!-- for mobile screen top-header  -->
+    <section class="for-mbl-header">
+
+        <div class="for-mbl-head">
+            <div class="arrow-sec">
+                <a href="">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <span>GIRLS - COLLECTIONS</span>
+            </div>
+            <div class="mbl-cart">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#shopping-bag"
+                        alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- mbl-navbar  -->
+
+        <div class="mbl-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="">Best Sellers</a>
+                </li>
+                <li>
+                    <a href="">Pretty in Pink</a>
+                </li>
+                <li>
+                    <a href="">Character</a>
+                </li>
+                <li>
+                    <a href="">Dress In Style</a>
+                </li>
+                <li>
+                    <a href="">Activewear</a>
+                </li>
+                <li>
+                    <a href="">Denimwear</a>
+                </li>
+                <li>
+                    <a href="">Basics</a>
+                </li>
+                <li>
+                    <a href="">Festive Collection</a>
+                </li>
+                <li>
+                    <a href="">Sets</a>
+                </li>
+                <li>
+                    <a href="">Swimwear</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- sort filter btn for mbl  -->
+
+    <section class="sort-filter">
+           <div class="sf-btn">
+               <button onclick="sortFunction()" class="sort-m">Sort <i class="fa-solid fa-sort"></i></button>
+               <button class="filter-m">Filter <i class="fa-solid fa-filter"></i></button>
+           </div>
+    </section>
+
+    <!-- sort menu for mbl  -->
+
+    <div id="sort-mbl-menu">
+          <div class="top-close">
+             <h4>Sort By</h4>
+             <div onclick="closeFunction()" id="close" class="fa-solid fa-xmark"></div>
+          </div>
+
+          <div class="sort-btn">
+              <button class="featured">Featured</button>
+              <button class="best-selling">Best Selling</button>
+              <button class="Alphabetically-AtoZ">Alphabetically A-Z</button>
+              <button class="Alphabetically-ZtoA">Alphabetically Z-A</button>
+              <button class="price-low-to-high">Price, low to hight</button>
+              <button class="price-high-to-low">Price, high to low</button>
+              <button class="date-old-to-new">Date, old to new</button>
+              <button class="date-new-to-old">Date, new to old</button>
+          </div>
+          <div class="apply-btn">
+               <button class="btn-a" href="">APPLY</button>
+          </div>
+    </div>
+
+    <section class="girl-best-seller">
+
+        <div class="main-heading">
+            <h5>Girl's BestSeller</h5>
+        </div>
+
+        <div class="main-content">
+
+            <!-- filters section  -->
+
+            <div class="left-dropdown-sec">
+                <div class="link-sec">
+                    <li>
+                        <a href="">Home <i class="fa-solid fa-angle-right"></i></a>
+                    </li>
+                    <li>
+                        Girls' BestSeller
+                    </li>
+                </div>
+                <h4>Filters</h4>
+
+                <!-- department dropdown part -->
+
+                <div class="dropdown-section">
+                    <div onclick="department()" class="d-heading">
+                        <h5>Department</h5>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="department">
+                        <input type="search" id="search-bar" placeholder="Search Options">
+                        <div id="department-left" class="filter-content">
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Girls (2 to 8 yrs)</span>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(54)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Girls Footwear (1 to 3 yrs)</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(9)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Girls Footwear (3 to 5 yrs)</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(17)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Girls Footwear (5 to 14 yrs)</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(22)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Infant Girls (3 to 24 mnths)</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(12)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Infant Girls (8 to 41 yrs)</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(27)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- category dropdown part  -->
+
+                <div class="dropdown-section">
+                    <div onclick="category()" class="d-heading">
+                        <h5>category</h5>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="category">
+                        <input type="search" id="search-bar" placeholder="Search Options">
+                        <div id="category-left" class="filter-content">
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Blouse</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(8)</span>
+                            </div>
+
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Dresses</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(17)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Flip Flops</span>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(5)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Jeans</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(9)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Jeggings</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(5)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Joggers</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(3)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Jumpsuits</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(4)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Leggings</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(6)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Pyjama Sets</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(8)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Sandals</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(2)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Shoes</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(9)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Shorts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(3)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Sweateshirts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(12)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>T-Shirts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(35)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Trainers</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(21)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Trousers</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(13)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- products types  -->
+
+                <div class="dropdown-section">
+                    <div onclick="product()" class="d-heading">
+                        <h5>Product Type</h5>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="product">
+                        <input type="search" id="search-bar" placeholder="Search Options">
+                        <div id="product-left" class="filter-content">
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Active Pants</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(2)</span>
+                            </div>
+
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>All Over Print T-Shirts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(3)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Ballerinas</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Blouses</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(4)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Casual Sandals</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(2)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Casual Shorts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Character</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(4)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Chunky Shoes</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Denim Shorts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(3)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Embellished T-Shirts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(2)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Embroidered T-Shirts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(5)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Graphic T-Shirts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Harem Pants</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(2)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Jeans-Regular Fit</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(4)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Jeans-Skinny Fit</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(3)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Mules</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Plain T-Shirts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(8)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Polo Shirts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(5)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Pumps</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(0)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Slides</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Slip Ons</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(2)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Sneakers</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(7)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Tops</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(3)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>T-Shirts</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(14)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- price dropdown part -->
+
+                <div class="dropdown-section">
+                    <div onclick="price()" class="d-heading">
+                        <h5>Price</h5>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="price">
+                        <!-- <input type="search" id="search-bar" placeholder="Search Options"> -->
+                        <div id="price-left" class="filter-content">
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>UNDER SAR (20)</span>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(54)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>SAR 20 - SAR 40</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(98)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>SAR 40 - SAR 60</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(17)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- deals dropdown part -->
+
+                <div class="dropdown-section">
+                    <div onclick="deal()" class="d-heading">
+                        <h5>Deals</h5>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="deal">
+                        <!-- <input type="search" id="search-bar" placeholder="Search Options"> -->
+                        <div id="deals-left" class="filter-content">
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>2 FOR 37</span>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(17)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>2 FOR 49</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(8)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>2 FOR 69</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(17)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>2 FOR 89</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(23)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>New In</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(132)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Sale</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(120)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- discount dropdown part -->
+
+                <div class="dropdown-section">
+                    <div onclick="discount()" class="d-heading">
+                        <h5>Discount</h5>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="discount">
+                        <!-- <input type="search" id="search-bar" placeholder="Search Options"> -->
+                        <div id="price-left" class="filter-content">
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>Under 25%</span>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(21)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>25% - 40%</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(78)</p>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>40% - 60%</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(46)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- size types  -->
+
+                <div class="dropdown-section">
+                    <div onclick="size()" class="d-heading">
+                        <h5>Size</h5>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="size">
+                        <input type="search" id="search-bar" placeholder="Search Options">
+                        <div id="size-left" class="filter-content">
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>3-6 Months</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(18)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>6-12 Months</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(21)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>12-18 Months</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(16)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>18-24 Months</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(18)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>2-3 Years</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(46)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>4-5 Years</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(32)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>5-6 Years</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(25)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>7-8 Years</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(28)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>8-9 Yrs (S)</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(22)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>9-10 Yrs (M)</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(21)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>11-12 Yrs (L)</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(23)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>13-14 Yrs (XL)</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(19)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU19</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(2)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU20</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU21</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(3)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU22</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(4)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU23</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(9)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU24</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(7)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU25</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(10)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU26</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(10)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU27</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(2)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU28</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(6)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU29</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(3)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU30</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(7)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU31</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU32</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(3)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU33</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(5)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU34</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(2)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU35</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(4)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU36</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(7)</span>
+                            </div>
+                            <div class="filter-row">
+                                <label class="dp-check-box">
+                                    <span>EU37</span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span id="brac-count">(9)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- color dropdown part -->
+
+                <div class="dropdown-section">
+                    <div onclick="color()" class="d-heading">
+                        <h5>Color</h5>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <div class="color">
+                        <!-- <input type="search" id="search-bar" placeholder="Search Options"> -->
+                        <div id="color-left" class="filter-color">
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="pink"></span>
+                                    <span>Pink</span>
+                                </div>
+                                <span id="brac-count">(2)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="blue"></span>
+                                    <span>Blue</span>
+                                </div>
+                                <span id="brac-count">(9)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="yellow"></span>
+                                    <span>Yellow</span>
+                                </div>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="beige"></span>
+                                    <span>Beige</span>
+                                </div>
+                                <span id="brac-count">(5)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="black"></span>
+                                    <span>Black</span>
+                                </div>
+                                <span id="brac-count">(9)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="brown"></span>
+                                    <span>Brown</span>
+                                </div>
+                                <span id="brac-count">(8)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="green"></span>
+                                    <span>Green</span>
+                                </div>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="fuchsia"></span>
+                                    <span>Fuchsia</span>
+                                </div>
+                                <span id="brac-count">(3)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="grey"></span>
+                                    <span>Grey</span>
+                                </div>
+                                <span id="brac-count">(6)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="orange"></span>
+                                    <span>Orange</span>
+                                </div>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="yellowgreen"></span>
+                                    <span>Yellowgreen</span>
+                                </div>
+                                <span id="brac-count">(2)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="navy"></span>
+                                    <span>Navy</span>
+                                </div>
+                                <span id="brac-count">(4)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="red"></span>
+                                    <span>Red</span>
+                                </div>
+                                <span id="brac-count">(1)</span>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-box">
+                                    <span class="seagreen"></span>
+                                    <span>Seagreen</span>
+                                </div>
+                                <span id="brac-count">(7)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- main right items section  -->
+
+            <div class="right-items-sec">
+
+                <!-- for mobile screen  -->
+                <div class="for-mbl-screen-link">
+                    <div class="link-sec-mbl">
+                        <li>
+                            <a href="">Home <i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                        <li>
+                            Girls' BestSeller
+                        </li>
+                    </div>
+                </div>
+
+
+                <div class="sort-sec">
+                    <p>154 Products</p>
+                    <div class="sort">
+                        <p>Sort By:</p>
+                        <select>
+                            <option value="0">Best Selling</option>
+                            <option value="1">Featured</option>
+                            <option value="0">Lowest Price</option>
+                            <option value="1">Hightest Price</option>
+                            <option value="0">Alphabetically, A-Z</option>
+                            <option value="1">Alphabetically, Z-A</option>
+                            <option value="0">Date, New to Old</option>
+                            <option value="1">Date, Old to New</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="content-items">
+
+                    <!-- first row  -->
+                    <div class="content-row">
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122906206-Blue-Ruffle-Dress-Butterfly-Blue_720x.jpg?v=1657714703"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress Character
+                                </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> Buy to Save More</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122748914_201-Black-Peter-Pan-Collar-Fashion-Tee_720x.jpg?v=1655911283"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122023972_201-White-Button-Front-Blouse_720x.jpg?v=1655977167"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck DrESS </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+
+                        <!-- 2nd row  -->
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122906409_201-Pink-Ruffle-Dress-Ice-Cream-Pink_720x.jpg?v=1657714801"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122785387_201-Dusty-Pink-Active-Pant_720x.jpg?v=1656509512"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p>20% OFF above 250</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122892271-Blue-Printed-Dress_720x.jpg?v=1657094394"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+
+                        <!-- 3rd row  -->
+                        
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122859809_201-White-Aop-Nightsuit_720x.jpg?v=1658144449"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122906100_201-Beige-Ruffle-Dress-Circle_720x.jpg?v=1657089848"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p>20% OFF above 250</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122741405-1-Pale-Blue-Boxy-Tee-Floral-Placement_720x.jpg?v=16570898364"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+
+                        <!-- 4th row  -->
+                        
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122137427_201-White-Girls-T-shirt-With-Chest-Applique-Work_720x.jpg?v=1655820252"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/121926889_1-Navy-Glitter-Upper-Slim-Runner_720x.jpg?v=1658841417"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p>20% OFF above 250</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122740605-1-Black-Basic-Butterfly-Placement_720x.jpg?v=1656509505"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+
+                          <!-- 5th row  -->
+                        
+                          <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122785491-1-Pink-Active-Pant_720x.jpg?v=1656509512"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122906302_201-Yellow-Ruffle-Dress-Microfloral-Yellow_720x.jpg?v=1657089849"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p>20% OFF above 250</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122874081-Pink-Dress_720x.jpg?v=1657096702"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+
+                         <!-- 6th row  -->
+                        
+                         <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122728315-Orange-Nigthsuit_720x.jpg?v=1656669711"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/122124538-Light_20Washlt.Wash-Girls-Denim-Pant_720x.jpg?v=1655820379"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p>20% OFF above 250</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="row-items">
+                            <div class="sale-tag">
+                                <p>SALE</p>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/products/121928251_1-White-Lace-Up-Sneaker_720x.jpg?v=1659442640"
+                                alt="">
+                            <a href="">
+                                <img id="heart-icon"
+                                    src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <div class="tag-content">
+                                <p>Women Black Turtle Neck Dress </p>
+                                <h4>SAR 99.00</h4>
+                                <a href="">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <p> EXTRA 20% OFF</p>
+                                </a>
+                               <button class="bag-btn">ADD TO BAG</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section  -->
+
+    <footer>
+        <div class="top-footer">
+            <div class="text-part">
+                <h2>Subscribe Today</h2>
+                <h3>Subscribe to our newsletter</h3>
+                <p id="hide-mbl-f">Get exclusive access to update. offers and giveways</p>
+            </div>
+            <div class="form-part">
+                <div class="email-form">
+                    <input type="search" id="search-bar" placeholder="Your email address">
+                    <button id="subtu" class="sub-btn">Subscribe</button>
+                </div>
+            </div>
+            <div id="for-mbl-icons">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- main section  -->
+
+        <div class="main-footer">
+            <div class="footer-data">
+                <ul class="first">
+                    <li class="footer-heading">Help & Faq</li>
+                    <li><a href="/">Delivery Policy</a></li>
+                    <li><a href="/">Return & Refund Policy</a></li>
+                    <li><a href="/">Quality Gurantee</a></li>
+                    <li><a href="/">Customer Services</a></li>
+                    <li><a href="/">Privacy Policy</a></li>
+                    <li><a href="/">Size Guides</a></li>
+                    <li><a href="/">Pormontion & Discounts</a></li>
+                    <li><a href="/">Term of Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-data">
+                <ul class="Second">
+                    <li class="footer-heading">My Account</li>
+                    <li><a href="/">Profile</a></li>
+                    <li><a href="/">Track Orders</a></li>
+                    <li><a href="/">Wishlist</a></li>
+                    <li><a href="/">Order History</a></li>
+                    <li><a href="/">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-data">
+                <ul class="third">
+                    <li class="footer-heading">The Company</li>
+
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Careers</a></li>
+                    <li><a href="/">Store Locater</a></li>
+                </ul>
+            </div>
+            <div class="footer-data">
+                <ul class="four">
+                    <li class="footer-heading">More</li>
+                    <li><a href="/">Rewards</a></li>
+                    <li><a href="/">Online Gift Card info</a></li>
+                    <li><a href="/">Franchise</a></li>
+                </ul>
+            </div>
+            <div class="footer-data">
+                <div class="five">
+                    <div class="lang">
+                        <h3><a href="/">English</a></h3>
+                    </div>
+                    <select>
+                        <option value="0">Saudia Arabia (SAR)</option>
+                        <option value="1">United Arab Emirates (AED)</option>
+                        <!-- <option value="2">BMW</option> -->
+                    </select>
+                    <div>
+                        <button class="call-btn">Call-800-304-3113</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- footer end section  -->
+
+        <div class="lower-footer">
+            <div class="logo-sec">
+                <h2>Redtag<span>.</span></h2>
+                <p id="CR-No">CR/ 2049439309</p>
+                <p id="VAT">VAT/ 384929309480003</p>
+            </div>
+            <div class="rights-sec">
+                <p>
+                    &copy; 2022. REDTAG | All Rights Reserved
+                </p>
+            </div>
+            <div class="icons-sec">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <!-- <a href=""><i class="fa-brands fa-snapchat"></i></a> -->
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/best-seller.js"></script>
+</body>
+
+</html>
