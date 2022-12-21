@@ -246,12 +246,20 @@ function myHotOffer() {
 
 function department(){
   var elms = document.getElementsByClassName("department");
+  var btn = document.getElementsByClassName("dd-apply-btn");
 
   Array.from(elms).forEach((x) => {
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
+    }
+  })
+  Array.from(btn).forEach((y) => {
+    if (y.style.display === "none") {
+      y.style.display = "block";
+    } else {
+      y.style.display = "none";
     }
   })
 }
@@ -353,6 +361,22 @@ function sortFunction() {
 
 function closeFunction() {
   let sf = document.getElementById("sort-mbl-menu");
+  if (sf.style.display = "block") {
+    sf.style.display = "none";
+  }
+}
+
+function filterFunction() {
+  let sf = document.getElementById("filter-for-mbl");
+  if (sf.style.display === "block") {
+    sf.style.display = "none";
+  } else {
+    sf.style.display = "block";
+  }
+}
+
+function closeFunction() {
+  let sf = document.getElementById("filter-for-mbl");
   if (sf.style.display = "block") {
     sf.style.display = "none";
   }
