@@ -1134,7 +1134,7 @@ body {
 
 @media only screen and (max-width: 450px) {
     .main-content .right-items-sec .content-items .content-row .row-items {
-        width: 200px;
+        width: 205px;
     }
 
     .main-content .right-items-sec .content-items .content-row .row-items #heart-icon {
@@ -1211,9 +1211,9 @@ body {
     }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 415px) {
     .main-content .right-items-sec .content-items .content-row .row-items {
-        width: 180px;
+        width: 195px;
     }
 
     .main-heading h5 {
@@ -1223,9 +1223,9 @@ body {
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 395px) {
     .main-content .right-items-sec .content-items .content-row .row-items {
-        width: 174px;
+        width: 185px;
     }
 
     .main-content .right-items-sec .content-items .content-row .row-items #heart-icon {
@@ -1233,6 +1233,12 @@ body {
         right: 7px;
         width: 17px;
         height: 17px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .main-content .right-items-sec .content-items .content-row .row-items {
+        width: 175px;
     }
 }
 
