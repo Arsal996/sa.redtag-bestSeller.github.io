@@ -11,7 +11,6 @@
     outline: none;
     border: none;
     text-transform: capitalize;
-    /* transition: 1s linear; */
 }
 
 $red: #ff0000;
@@ -158,7 +157,7 @@ body {
 
     background-color: $white-clr;
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     border-radius: 20px 20px 0 0;
     margin-top: 3rem;
     display: none;
@@ -166,7 +165,6 @@ body {
     bottom: 0;
     position: fixed;
     box-shadow: 0 3px 2px 100vh rgba(0, 0, 0, 0.4);
-    // transition: 1s;
 
     .top-close {
         display: flex;
@@ -205,14 +203,15 @@ body {
                 color: $white-clr;
             }
         }
-        .best-selling{
+
+        .best-selling {
             background-color: $black-clr;
             color: $white-clr;
         }
     }
 
     .apply-btn {
-        
+
         justify-content: center;
         text-align: center;
 
@@ -226,7 +225,7 @@ body {
             border-radius: 20px;
             margin-top: 22rem;
 
-            &:hover{
+            &:hover {
                 background-color: rgb(240, 240, 240);
                 color: $black-clr;
                 border: 1px solid $black-clr;
@@ -236,6 +235,454 @@ body {
     }
 }
 
+// filter menu for mbl css 
+
+#filter-for-mbl {
+    background-color: #fff;
+    width: 100%;
+    height: 95vh;
+    border-radius: 20px 20px 0 0;
+    margin-top: 3rem;
+    // display: none;
+    overflow-y: scroll;
+    z-index: 11;
+    bottom: 0;
+    position: fixed;
+    box-shadow: 0 3px 2px 100vh rgba(0, 0, 0, 0.4);
+    
+    .fm-top{
+
+        position: sticky;
+        top: 0;
+        background-color: $white-clr;
+        z-index: 12;
+        padding-top: .5rem;
+
+        .top-close {
+            float: right;
+            margin-right: 1.8rem;
+            margin-top: 1rem;
+    
+            #close {
+                font-size: 2rem;
+                cursor: pointer;
+            }
+        }
+    
+        h4 {
+            text-align: center;
+            font-size: 1.7rem;
+            margin: 3rem 1rem 0rem 1rem;
+            padding-bottom: 1rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgb(177, 175, 175);
+        }
+    }
+
+    .apply-btn {
+
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+
+        .btn-a {
+            padding: 1rem 0.4rem;
+            width: 70%;
+            font-size: 1.1rem;
+            background-color: $black-clr;
+            text-align: center;
+            color: $white-clr;
+            border-radius: 20px;
+            margin-top: 2rem;
+
+            &:hover {
+                background-color: rgb(240, 240, 240);
+                color: $black-clr;
+                border: 1px solid $black-clr;
+                font-weight: 500;
+            }
+        }
+    }
+
+    //  department dropdown css 
+
+    .dropdown-section {
+        padding-top: 2rem;
+        margin-left: 2rem;
+        padding-bottom: 1.7rem;
+        width: 87%;
+        border-bottom: 1px solid rgb(177, 175, 175);
+
+        .d-heading {
+            display: flex;
+            letter-spacing: 2px;
+            cursor: pointer;
+            padding-left: 1.4rem;
+
+            h5 {
+                font-size: 1.2rem;
+                color: $black-clr;
+                width: 250px;
+                font-family: 'Ubuntu', sans-serif;
+            }
+
+            i {
+                font-size: 1.8rem;
+                margin-top: -.3rem;
+                margin-left: 3.5rem;
+                color: #757575;
+            }
+
+        }
+
+        .department,
+        .category,
+        .product,
+        .price,
+        .deal,
+        .discount,
+        .size,
+        .color {
+
+            display: none;
+            width: 98%;
+            padding-bottom: 2rem;
+            padding-left: .3rem;
+
+            #department-left {
+                height: 26rem;
+            }
+
+            #category-left {
+                height: 25.5rem;
+            }
+
+            #product-left {
+                height: 25.4rem;
+            }
+
+            #price-left {
+                height: 12rem;
+                overflow: auto;
+            }
+
+            #deals-left {
+                height: 22rem;
+            }
+
+            #size-left {
+                height: 25.4rem;
+            }
+
+            input {
+                border: 1px solid $light-clr;
+                background-color: $white-clr;
+                width: 97%;
+                padding: .7rem 1.2rem;
+                border-radius: 50px;
+                font-size: 1.2rem;
+                margin-top: 1.3rem;
+            }
+
+            .filter-content {
+                // width: 27rem;
+                margin-top: 1.2rem;
+                overflow-y: scroll;
+
+                &::-webkit-scrollbar {
+                    width: 4px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 5px grey;
+                    border-radius: 10px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: rgb(131, 131, 131);
+                    border-radius: 10px;
+                }
+
+                .filter-row {
+                    display: flex;
+                    cursor: pointer;
+
+                    #brac-count {
+                        margin-top: 1.4rem;
+                        margin-left: 3rem;
+                        font-size: 15px;
+                        color: rgb(0, 0, 0);
+                    }
+                }
+
+                .dp-check-box {
+                    display: block;
+                    position: relative;
+                    padding-left: 40px;
+                    margin-bottom: 8px;
+                    cursor: pointer;
+                    margin-top: 1.2rem;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    width: 76%;
+                    word-spacing: .2rem;
+                    font-family: 'Quicksand', sans-serif;
+
+                    span {
+                        font-weight: 500;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        margin-top: -.2rem;
+                        color: #000000;
+                        line-height: 1.8rem;
+                        transition: 0.4s;
+
+                        &:hover {
+                            color: rgb(68, 68, 68);
+                        }
+                    }
+                }
+
+                /* Hide the browser's default checkbox */
+                .dp-check-box input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                }
+
+                /* Create a custom checkbox */
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 26px;
+                    width: 26px;
+                    border: 1px solid $black-clr;
+                    background-color: $white-clr;
+                }
+
+                /* On mouse-over, add a grey background color */
+                .dp-check-box:hover input~.checkmark {
+                    background-color: #ccc;
+                }
+
+                /* When the checkbox is checked, add a blue background */
+                .dp-check-box input:checked~.checkmark {
+                    background-color: #070707;
+                }
+
+                /* Create the checkmark/indicator (hidden when not checked) */
+                .checkmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+
+                /* Show the checkmark when checked */
+                .dp-check-box input:checked~.checkmark:after {
+                    display: block;
+                }
+
+                /* Style the checkmark/indicator */
+                .dp-check-box .checkmark:after {
+                    left: 9px;
+                    top: 5px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid white;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+
+            }
+
+            // color dropdown menu css 
+                
+
+            .filter-color {
+                height: 33rem;
+                margin-top: 1rem;
+                padding-top: 1.4rem;
+                padding-left: 1rem;
+                // overflow-y: scroll;
+
+                &::-webkit-scrollbar {
+                    width: 10px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 5px grey;
+                    border-radius: 10px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: rgb(190, 190, 190);
+                    border-radius: 10px;
+                }
+
+                .color-box {
+                    display: flex;
+                    position: relative;
+                    padding-left: 40px;
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    width: 45%;
+                    word-spacing: .2rem;
+                    font-family: 'Quicksand', sans-serif;
+                }
+
+                /* Hide the browser's default checkbox */
+                .color-box input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                }
+
+                /* Create a custom checkbox */
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 50px;
+                    height: 30px;
+                    width: 30px;
+                    background-color: $red;
+                    margin-left: .5rem;
+                   
+                }
+
+                /* Create the checkmark/indicator (hidden when not checked) */
+                .checkmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+
+                /* Show the checkmark when checked */
+                .color-box input:checked~.checkmark:after {
+                    display: block;
+                }
+
+                /* Style the checkmark/indicator */
+                .color-box .checkmark:after {
+                    left: 1px;
+                    top: 1px;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    border: solid rgb(255, 252, 252);
+                    border-width: 2px 2px 2px 2px;
+                }
+
+
+                .color-row {
+                    display: flex;
+                    cursor: pointer;
+                    padding-bottom: 2.5rem;
+
+
+                    .color-box {
+                        // display: flex;
+                        #pink{
+                            @include colors(pink);
+                        }
+
+                        #blue {
+                            @include colors(blue);
+                        }
+
+                        #yellow {
+                            @include colors(yellow);
+                        }
+
+                        #beige {
+                            @include colors(beige);
+                        }
+
+                        #cream {
+                            @include colors(#FFFDD0);
+                        }
+
+                        #brown {
+                            @include colors(brown);
+                        }
+
+                        #green {
+                            @include colors(green);
+                        }
+
+                        #fuchsia {
+                            @include colors(fuchsia);
+                        }
+
+                        #grey {
+                            @include colors(grey);
+                        }
+
+                        #orange {
+                            @include colors(orange);
+                        }
+
+                        #navy {
+                            @include colors(navy);
+                        }
+
+                        #red {
+                            @include colors(red);
+                        }
+
+                        #purple {
+                            @include colors(purple);
+                        }
+
+                        #seagreen {
+                            @include colors(rgb(0, 255, 170));
+                        }
+                        #silver{
+                            @include colors(silver);
+                        }
+
+                        p {
+                            font-weight: 500;
+                            font-size: 13px;
+                            letter-spacing: 1px;
+                            margin-left: .4rem;
+                            margin-top: .4rem;
+                            color: #757575;
+                            line-height: 1.8rem;
+                            transition: 0.4s;
+
+                            &:hover {
+                                color: rgb(156, 156, 156);
+                            }
+                        }
+                    }
+
+                    #brac-count {
+                        margin-top: .4rem;
+                        margin-left: 0rem;
+                        font-size: 15px;
+                        color: rgb(131, 131, 131);
+                    }
+                }
+            }
+        }
+    }
+
+
+}
 
 // dropdown navbar menu css 
 
@@ -469,7 +916,7 @@ body {
                     font-size: 1.2rem;
                     color: rgb(82, 82, 82);
                     display: block;
-                    width: 250px;
+                    width: 240px;
                     font-family: 'Ubuntu', sans-serif;
                     // margin-top: -1rem;
                 }
@@ -525,7 +972,7 @@ body {
                 }
 
                 .filter-content {
-                    width: 21.4rem;
+                    width: 21.5rem;
                     margin-top: 1.2rem;
                     overflow-y: scroll;
 
@@ -643,10 +1090,11 @@ body {
                 }
 
                 // color dropdown menu css 
+                
 
                 .filter-color {
-                    width: 21.4rem;
-                    height: 20rem;
+                    width: 21.5rem;
+                    height: 22rem;
                     margin-top: 1em;
                     overflow-y: scroll;
 
@@ -664,81 +1112,137 @@ body {
                         border-radius: 10px;
                     }
 
+                    .color-box {
+                        display: block;
+                        position: relative;
+                        padding-left: 40px;
+                        cursor: pointer;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        width: 45%;
+                        word-spacing: .2rem;
+                        font-family: 'Quicksand', sans-serif;
+                    }
+
+                    /* Hide the browser's default checkbox */
+                    .color-box input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+
+                    /* Create a custom checkbox */
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        border-radius: 50px;
+                        height: 30px;
+                        width: 30px;
+                        background-color: $red;
+                       
+                    }
+
+                    /* Create the checkmark/indicator (hidden when not checked) */
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+
+                    /* Show the checkmark when checked */
+                    .color-box input:checked~.checkmark:after {
+                        display: block;
+                    }
+
+                    /* Style the checkmark/indicator */
+                    .color-box .checkmark:after {
+                        left: 1px;
+                        top: 1px;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        border: solid rgb(255, 252, 252);
+                        border-width: 2px 2px 2px 2px;
+                    }
+
+
                     .color-row {
                         display: flex;
                         cursor: pointer;
-                        padding-top: 1.5rem;
+                        padding-bottom: 2.5rem;
+
 
                         .color-box {
-                            display: flex;
-
-                            .pink {
+                            // display: flex;
+                            #pink{
                                 @include colors(pink);
                             }
 
-                            .blue {
+                            #blue {
                                 @include colors(blue);
                             }
 
-                            .yellow {
+                            #yellow {
                                 @include colors(yellow);
                             }
 
-                            .beige {
+                            #beige {
                                 @include colors(beige);
                             }
 
-                            .black {
-                                @include colors(black);
+                            #cream {
+                                @include colors(#FFFDD0);
                             }
 
-                            .brown {
+                            #brown {
                                 @include colors(brown);
                             }
 
-                            .green {
+                            #green {
                                 @include colors(green);
                             }
 
-                            .fuchsia {
+                            #fuchsia {
                                 @include colors(fuchsia);
                             }
 
-                            .grey {
+                            #grey {
                                 @include colors(grey);
                             }
 
-                            .orange {
+                            #orange {
                                 @include colors(orange);
                             }
 
-                            .navy {
+                            #navy {
                                 @include colors(navy);
                             }
 
-                            .red {
+                            #red {
                                 @include colors(red);
                             }
 
-                            .silver {
+                            #purple {
+                                @include colors(purple);
+                            }
+
+                            #seagreen {
+                                @include colors(rgb(0, 255, 170));
+                            }
+                            #silver{
                                 @include colors(silver);
                             }
 
-                            .yellowgreen {
-                                @include colors(yellowgreen);
-                            }
-
-                            .seagreen {
-                                @include colors(rgb(0, 255, 170));
-                            }
-
-                            span {
+                            p {
                                 font-weight: 500;
                                 font-size: 14.5px;
                                 letter-spacing: 1px;
-                                // margin-top: 1rem;
-                                padding-left: 2.5rem;
-                                padding-top: .4rem;
+                                margin-top: .4rem;
                                 color: #757575;
                                 line-height: 1.8rem;
                                 transition: 0.4s;
@@ -751,7 +1255,7 @@ body {
 
                         #brac-count {
                             margin-top: .4rem;
-                            margin-left: 2rem;
+                            margin-left: 0rem;
                             font-size: 15px;
                             color: rgb(131, 131, 131);
                         }
@@ -1077,7 +1581,7 @@ body {
         display: block;
     }
 
-    .sort-filter{
+    .sort-filter {
         display: block;
     }
 }
@@ -1144,7 +1648,7 @@ body {
     }
 
     .main-content .right-items-sec .content-items .content-row .row-items .sale-tag {
-        width: 4.2rem;
+        width: 5rem;
     }
 
     .main-content .right-items-sec .content-items .content-row .row-items .tag-content a p {
