@@ -1174,18 +1174,19 @@ body {
 
         .nav-list {
             padding-top: 1rem;
-            padding-left: .8rem;
+            padding-left: .2rem;
+            padding-bottom: 1.4rem;
 
             li {
 
                 a {
                     text-decoration: none;
-                    margin-right: 1rem;
+                    margin-right: 0rem;
                     color: $black-clr;
                     text-align: center;
                     display: block;
                     font-size: 1.2rem;
-                    width: 90px;
+                    width: 114px;
                 }
             }
         }
