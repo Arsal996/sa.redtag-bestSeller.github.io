@@ -372,7 +372,7 @@
         <div class="mbl-nav">
             <ul class="nav-list">
                 <li>
-                    <a href="">Best Sellers</a>
+                    <a href=""><b>Best Sellers</b></a>
                 </li>
                 <li>
                     <a href="">Pretty in Pink</a>
@@ -410,34 +410,986 @@
     <!-- sort filter btn for mbl  -->
 
     <section class="sort-filter">
-           <div class="sf-btn">
-               <button onclick="sortFunction()" class="sort-m">Sort <i class="fa-solid fa-sort"></i></button>
-               <button class="filter-m">Filter <i class="fa-solid fa-filter"></i></button>
-           </div>
+        <div class="sf-btn">
+            <button onclick="sortFunction()" class="sort-m">Sort <i class="fa-solid fa-sort"></i></button>
+            <button onclick="filterFunction()" class="filter-m">Filter <i class="fa-solid fa-filter"></i></button>
+        </div>
     </section>
 
     <!-- sort menu for mbl  -->
 
     <div id="sort-mbl-menu">
-          <div class="top-close">
-             <h4>Sort By</h4>
-             <div onclick="closeFunction()" id="close" class="fa-solid fa-xmark"></div>
-          </div>
+        <div class="top-close">
+            <h4>Sort By</h4>
+            <div onclick="closeFunction()" id="close" class="fa-solid fa-xmark"></div>
+        </div>
 
-          <div class="sort-btn">
-              <button class="featured">Featured</button>
-              <button class="best-selling">Best Selling</button>
-              <button class="Alphabetically-AtoZ">Alphabetically A-Z</button>
-              <button class="Alphabetically-ZtoA">Alphabetically Z-A</button>
-              <button class="price-low-to-high">Price, low to hight</button>
-              <button class="price-high-to-low">Price, high to low</button>
-              <button class="date-old-to-new">Date, old to new</button>
-              <button class="date-new-to-old">Date, new to old</button>
-          </div>
-          <div class="apply-btn">
-               <button class="btn-a" href="">APPLY</button>
-          </div>
+        <div class="sort-btn">
+            <button class="featured">Featured</button>
+            <button class="best-selling">Best Selling</button>
+            <button class="Alphabetically-AtoZ">Alphabetically A-Z</button>
+            <button class="Alphabetically-ZtoA">Alphabetically Z-A</button>
+            <button class="price-low-to-high">Price, low to hight</button>
+            <button class="price-high-to-low">Price, high to low</button>
+            <button class="date-old-to-new">Date, old to new</button>
+            <button class="date-new-to-old">Date, new to old</button>
+        </div>
+        <div class="apply-btn">
+            <button class="btn-a" href="">APPLY</button>
+        </div>
     </div>
+
+    <!-- filter menu section for mbl  -->
+
+    <div id="filter-for-mbl">
+        <div class="fm-top">
+            <div class="top-close">
+                <div onclick="closeFunction()" id="close" class="fa-solid fa-xmark"></div>
+            </div>
+            <h4>Filters</h4>
+        </div>
+
+        <!-- dropdown section  -->
+
+        <!-- department dropdown part -->
+
+        <div class="dropdown-section">
+            <div onclick="department()" class="d-heading">
+                <h5>Department</h5>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="department">
+                <input type="search" id="search-bar" placeholder="Search Options">
+                <div id="department-left" class="filter-content">
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Girls (2 to 8 yrs)</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(54)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Girls Footwear (1 to 3 yrs)</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(9)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Girls Footwear (3 to 5 yrs)</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(17)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Girls Footwear (5 to 14 yrs)</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(22)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Infant Girls (3 to 24 mnths)</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(12)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Senior Girls (8 to 41 yrs)</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(27)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- category dropdown part  -->
+
+        <div class="dropdown-section">
+            <div onclick="category()" class="d-heading">
+                <h5>category</h5>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="category">
+                <input type="search" id="search-bar" placeholder="Search Options">
+                <div id="category-left" class="filter-content">
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Blouse</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(8)</span>
+                    </div>
+
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Dresses</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(17)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Flip Flops</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(5)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Jeans</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(9)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Jeggings</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(5)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Joggers</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(3)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Jumpsuits</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(4)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Leggings</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(6)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Pyjama Sets</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(8)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Sandals</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(2)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Shoes</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(9)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Shorts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(3)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Sweateshirts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(12)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>T-Shirts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(35)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Trainers</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(21)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Trousers</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(13)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- products types  -->
+
+        <div class="dropdown-section">
+            <div onclick="product()" class="d-heading">
+                <h5>Product Type</h5>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="product">
+                <input type="search" id="search-bar" placeholder="Search Options">
+                <div id="product-left" class="filter-content">
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Active Pants</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(2)</span>
+                    </div>
+
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>All Over Print T-Shirts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(3)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Ballerinas</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(1)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Blouses</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(4)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Casual Sandals</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(2)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Casual Shorts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(1)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Character</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(4)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Chunky Shoes</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(1)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Denim Shorts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(3)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Embellished T-Shirts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(2)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Embroidered T-Shirts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(5)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Graphic T-Shirts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(1)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Harem Pants</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(2)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Jeans-Regular Fit</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(4)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Jeans-Skinny Fit</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(3)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Mules</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(1)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Plain T-Shirts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(8)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Polo Shirts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(5)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Pumps</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(0)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Slides</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(1)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Slip Ons</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(2)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Sneakers</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(7)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Tops</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(3)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>T-Shirts</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(14)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- price dropdown part -->
+
+        <div class="dropdown-section">
+            <div onclick="price()" class="d-heading">
+                <h5>Price</h5>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="price">
+                <!-- <input type="search" id="search-bar" placeholder="Search Options"> -->
+                <div id="price-left" class="filter-content">
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>UNDER SAR (20)</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(54)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>SAR 20 - SAR 40</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(98)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>SAR 40 - SAR 60</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(17)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- deals dropdown part -->
+
+        <div class="dropdown-section">
+            <div onclick="deal()" class="d-heading">
+                <h5>Deals</h5>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="deal">
+                <!-- <input type="search" id="search-bar" placeholder="Search Options"> -->
+                <div id="deals-left" class="filter-content">
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>2 FOR 37</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(17)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>2 FOR 49</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(8)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>2 FOR 69</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(17)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>2 FOR 89</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(23)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>New In</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(132)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Sale</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(120)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- discount dropdown part -->
+
+        <div class="dropdown-section">
+            <div onclick="discount()" class="d-heading">
+                <h5>Discount</h5>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="discount">
+                <!-- <input type="search" id="search-bar" placeholder="Search Options"> -->
+                <div id="price-left" class="filter-content">
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>Under 25%</span>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(21)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>25% - 40%</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(78)</p>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>40% - 60%</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="brac-count">(46)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- size types  -->
+
+        <div class="dropdown-section">
+            <div onclick="size()" class="d-heading">
+                <h5>Size</h5>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="size">
+                <input type="search" id="search-bar" placeholder="Search Options">
+                <div id="size-left" class="filter-content">
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>3-6 Months</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(18)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>6-12 Months</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(21)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>12-18 Months</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(16)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>18-24 Months</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(18)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>2-3 Years</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(46)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>4-5 Years</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(32)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>5-6 Years</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(25)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>7-8 Years</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(28)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>8-9 Yrs (S)</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(22)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>9-10 Yrs (M)</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(21)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>11-12 Yrs (L)</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(23)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>13-14 Yrs (XL)</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(19)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU19</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(2)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU20</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(1)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU21</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(3)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU22</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(4)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU23</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(9)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU24</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(7)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU25</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(10)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU26</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(10)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU27</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(2)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU28</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(6)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU29</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(3)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU30</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(7)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU31</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(1)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU32</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(3)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU33</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(5)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU34</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(2)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU35</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(4)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU36</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(7)</span>
+                    </div>
+                    <div class="filter-row">
+                        <label class="dp-check-box">
+                            <span>EU37</span>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span id="brac-count">(9)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- color dropdown part -->
+
+         <div class="dropdown-section">
+            <div onclick="color()" class="d-heading">
+                <h5>Color</h5>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="color">
+                <!-- <input type="search" id="search-bar" placeholder="Search Options"> -->
+                <div id="color-left" class="filter-color">
+                    <div class="color-row">
+                        <label class="color-box">
+                            <p>Pink</p>
+                            <input type="checkbox" checked="checked">
+                            <span id="pink" class="checkmark"></span>
+                            <p id="brac-count">(2)</p>
+                        </label>
+                        <label class="color-box">
+                            <p>Blue</p>
+                            <input type="checkbox">
+                            <span id="blue" class="checkmark"></span>
+                            <p id="brac-count">(8)</p>
+                        </label>
+                    </div>
+                    <div class="color-row">
+                        <label class="color-box">
+                            <p>Cream</p>
+                            <input type="checkbox">
+                            <span id="cream" class="checkmark"></span>
+                            <p id="brac-count">(8)</p>
+                        </label>
+                        <label class="color-box">
+                            <p>Purple</p>
+                            <input type="checkbox">
+                            <span id="purple" class="checkmark"></span>
+                            <p id="brac-count">(2)</p>
+                        </label>
+                    </div>
+                    <div class="color-row">
+                        <label class="color-box">
+                            <p>Grey</p>
+                            <input type="checkbox">
+                            <span id="grey" class="checkmark"></span>
+                            <p id="brac-count">(6)</p>
+                        </label>
+                        <label class="color-box">
+                            <p>Brown</p>
+                            <input type="checkbox">
+                            <span id="brown" class="checkmark"></span>
+                            <p id="brac-count">(6)</p>
+                        </label>
+                    </div>
+                    <div class="color-row">
+                        <label class="color-box">
+                            <p>Beige</p>
+                            <input type="checkbox">
+                            <span id="beige" class="checkmark"></span>
+                            <p id="brac-count">(2)</p>
+                        </label>
+                        <label class="color-box">
+                            <p>Fuchsia</p>
+                            <input type="checkbox">
+                            <span id="fuchsia" class="checkmark"></span>
+                            <p id="brac-count">(8)</p>
+                        </label>
+                    </div>
+                    <div class="color-row">
+                        <label class="color-box">
+                            <p>Green</p>
+                            <input type="checkbox">
+                            <span id="green" class="checkmark"></span>
+                            <p id="brac-count">(6)</p>
+                        </label>
+                        <label class="color-box">
+                            <p>Orange</p>
+                            <input type="checkbox">
+                            <span id="orange" class="checkmark"></span>
+                            <p id="brac-count">(2)</p>
+                        </label>
+                    </div>
+                    <div class="color-row">
+                        <label class="color-box">
+                            <p>Red</p>
+                            <input type="checkbox">
+                            <span id="red" class="checkmark"></span>
+                            <p id="brac-count">(8)</p>
+                        </label>
+                        <label class="color-box">
+                            <p>Yellow</p>
+                            <input type="checkbox">
+                            <span id="yellow" class="checkmark"></span>
+                            <p id="brac-count">(6)</p>
+                        </label>
+                    </div>
+                    <div class="color-row">
+                        <label class="color-box">
+                            <p>Seagreen</p>
+                            <input type="checkbox">
+                            <span id="seagreen" class="checkmark"></span>
+                            <p id="brac-count">(8)</p>
+                        </label>
+                        <label class="color-box">
+                            <p>Silver</p>
+                            <input type="checkbox">
+                            <span id="silver" class="checkmark"></span>
+                            <p id="brac-count">(6)</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="apply-btn">
+            <button class="btn-a" href="">APPLY</button>
+        </div>
+   
+    </div>
+
 
     <section class="girl-best-seller">
 
@@ -1291,102 +2243,116 @@
                         <!-- <input type="search" id="search-bar" placeholder="Search Options"> -->
                         <div id="color-left" class="filter-color">
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="pink"></span>
-                                    <span>Pink</span>
-                                </div>
-                                <span id="brac-count">(2)</span>
+                                <label class="color-box">
+                                    <p>Pink</p>
+                                    <input type="checkbox" checked="checked">
+                                    <span id="pink" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(2)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="blue"></span>
-                                    <span>Blue</span>
-                                </div>
-                                <span id="brac-count">(9)</span>
+                                <label class="color-box">
+                                    <p>Blue</p>
+                                    <input type="checkbox">
+                                    <span id="blue" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(8)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="yellow"></span>
-                                    <span>Yellow</span>
-                                </div>
-                                <span id="brac-count">(1)</span>
+                                <label class="color-box">
+                                    <p>Cream</p>
+                                    <input type="checkbox">
+                                    <span id="cream" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(8)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="beige"></span>
-                                    <span>Beige</span>
-                                </div>
-                                <span id="brac-count">(5)</span>
+                                <label class="color-box">
+                                    <p>Purple</p>
+                                    <input type="checkbox">
+                                    <span id="purple" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(2)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="black"></span>
-                                    <span>Black</span>
-                                </div>
-                                <span id="brac-count">(9)</span>
+                                <label class="color-box">
+                                    <p>Grey</p>
+                                    <input type="checkbox">
+                                    <span id="grey" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(6)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="brown"></span>
-                                    <span>Brown</span>
-                                </div>
-                                <span id="brac-count">(8)</span>
+                                <label class="color-box">
+                                    <p>Brown</p>
+                                    <input type="checkbox">
+                                    <span id="brown" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(6)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="green"></span>
-                                    <span>Green</span>
-                                </div>
-                                <span id="brac-count">(1)</span>
+                                <label class="color-box">
+                                    <p>Beige</p>
+                                    <input type="checkbox">
+                                    <span id="beige" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(2)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="fuchsia"></span>
-                                    <span>Fuchsia</span>
-                                </div>
-                                <span id="brac-count">(3)</span>
+                                <label class="color-box">
+                                    <p>Fuchsia</p>
+                                    <input type="checkbox">
+                                    <span id="fuchsia" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(8)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="grey"></span>
-                                    <span>Grey</span>
-                                </div>
-                                <span id="brac-count">(6)</span>
+                                <label class="color-box">
+                                    <p>Green</p>
+                                    <input type="checkbox">
+                                    <span id="green" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(6)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="orange"></span>
-                                    <span>Orange</span>
-                                </div>
-                                <span id="brac-count">(1)</span>
+                                <label class="color-box">
+                                    <p>Orange</p>
+                                    <input type="checkbox">
+                                    <span id="orange" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(2)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="yellowgreen"></span>
-                                    <span>Yellowgreen</span>
-                                </div>
-                                <span id="brac-count">(2)</span>
+                                <label class="color-box">
+                                    <p>Red</p>
+                                    <input type="checkbox">
+                                    <span id="red" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(8)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="navy"></span>
-                                    <span>Navy</span>
-                                </div>
-                                <span id="brac-count">(4)</span>
+                                <label class="color-box">
+                                    <p>Yellow</p>
+                                    <input type="checkbox">
+                                    <span id="yellow" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(6)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="red"></span>
-                                    <span>Red</span>
-                                </div>
-                                <span id="brac-count">(1)</span>
+                                <label class="color-box">
+                                    <p>Seagreen</p>
+                                    <input type="checkbox">
+                                    <span id="seagreen" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(8)</p>
                             </div>
                             <div class="color-row">
-                                <div class="color-box">
-                                    <span class="seagreen"></span>
-                                    <span>Seagreen</span>
-                                </div>
-                                <span id="brac-count">(7)</span>
+                                <label class="color-box">
+                                    <p>Silver</p>
+                                    <input type="checkbox">
+                                    <span id="silver" class="checkmark"></span>
+                                </label>
+                                <p id="brac-count">(6)</p>
                             </div>
                         </div>
                     </div>
@@ -1452,7 +2418,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> Buy to Save More</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1473,7 +2439,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1494,7 +2460,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
 
@@ -1517,7 +2483,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1538,7 +2504,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p>20% OFF above 250</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1559,12 +2525,12 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
 
                         <!-- 3rd row  -->
-                        
+
                         <div class="row-items">
                             <div class="sale-tag">
                                 <p>SALE</p>
@@ -1583,7 +2549,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1604,7 +2570,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p>20% OFF above 250</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1625,12 +2591,12 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
 
                         <!-- 4th row  -->
-                        
+
                         <div class="row-items">
                             <div class="sale-tag">
                                 <p>SALE</p>
@@ -1649,7 +2615,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1670,7 +2636,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p>20% OFF above 250</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1691,13 +2657,13 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
 
-                          <!-- 5th row  -->
-                        
-                          <div class="row-items">
+                        <!-- 5th row  -->
+
+                        <div class="row-items">
                             <div class="sale-tag">
                                 <p>SALE</p>
                             </div>
@@ -1715,7 +2681,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1736,7 +2702,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p>20% OFF above 250</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1757,13 +2723,13 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
 
-                         <!-- 6th row  -->
-                        
-                         <div class="row-items">
+                        <!-- 6th row  -->
+
+                        <div class="row-items">
                             <div class="sale-tag">
                                 <p>SALE</p>
                             </div>
@@ -1781,7 +2747,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1802,7 +2768,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p>20% OFF above 250</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
                         <div class="row-items">
@@ -1823,7 +2789,7 @@
                                     <i class="fa-solid fa-tag"></i>
                                     <p> EXTRA 20% OFF</p>
                                 </a>
-                               <button class="bag-btn">ADD TO BAG</button>
+                                <button class="bag-btn">ADD TO BAG</button>
                             </div>
                         </div>
 
