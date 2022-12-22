@@ -189,6 +189,7 @@ body {
 .mbl-menu {
   position: fixed;
   bottom: 0;
+  display: none;
   width: 100%;
   z-index: 20;
 }
@@ -3023,6 +3024,9 @@ body {
   .main-content .right-items-sec .content-items .content-row .row-items {
     width: 205px;
   }
+  .mbl-menu{
+        display: block;
+    }
   .main-content .right-items-sec .content-items .content-row .row-items #heart-icon {
     top: 10px;
     right: 12px;
