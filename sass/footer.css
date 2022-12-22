@@ -282,4 +282,45 @@ footer #for-mbl-icons a i {
     margin-bottom: 1.5rem;
   }
   
-}/*# sourceMappingURL=footer.css.map */
+}
+@media only screen and (max-width: 415px) {
+  .top-footer #for-mbl-icons a i {
+    padding: 0 1rem;
+  }
+  .lower-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .lower-footer #CR-No {
+    display: none;
+  }
+  .lower-footer #VAT {
+    display: none;
+  }
+  .main-footer .five select {
+    margin-left: 2rem;
+  }
+  footer .main-footer .five .call-btn {
+    margin-left: 6rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .main-footer .five select {
+    margin-left: 1rem;
+  }
+  footer .main-footer .five .call-btn {
+    margin-left: 5rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  footer .main-footer {
+    padding: 1 2.2rem;
+  }
+  footer .main-footer .five .call-btn {
+    margin-left: 4rem;
+  }
+  .main-footer .five select {
+    margin-left: 0.6rem;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
