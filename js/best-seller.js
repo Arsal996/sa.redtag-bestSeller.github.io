@@ -360,9 +360,13 @@ function sortFunction() {
 }
 
 function closeFunction() {
-  let sf = document.getElementById("sort-mbl-menu");
-  if (sf.style.display = "block") {
-    sf.style.display = "none";
+  let sort = document.getElementById("sort-mbl-menu");
+  let filter = document.getElementById("filter-for-mbl");
+  if (sort.style.display = "block") {
+    sort.style.display = "none";
+  }
+  if (filter.style.display = "block") {
+    filter.style.display = "none";
   }
 }
 
@@ -375,9 +379,3 @@ function filterFunction() {
   }
 }
 
-function closeFunction() {
-  let sf = document.getElementById("filter-for-mbl");
-  if (sf.style.display = "block") {
-    sf.style.display = "none";
-  }
-}
