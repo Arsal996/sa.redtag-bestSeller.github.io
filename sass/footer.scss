@@ -371,17 +371,18 @@ footer {
         padding: 0 1rem;
     }
 
-    .lower-footer {
+   .lower-footer {
         flex-wrap: wrap;
         justify-content: center;
+        padding-bottom: 11rem;
 
-        #CR-No {
-            display: none;
-        }
+        // #CR-No {
+        //     display: none;
+        // }
 
-        #VAT {
-            display: none;
-        }
+        // #VAT {
+        //     display: none;
+        // }
     }
 
     .main-footer .five select {
