@@ -290,12 +290,7 @@ footer #for-mbl-icons a i {
   .lower-footer {
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .lower-footer #CR-No {
-    display: none;
-  }
-  .lower-footer #VAT {
-    display: none;
+    padding-bottom: 11rem;
   }
   .main-footer .five select {
     margin-left: 2rem;
