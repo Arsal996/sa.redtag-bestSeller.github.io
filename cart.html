@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn link for fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- slider js link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- css link file  -->  
+    <link rel="stylesheet" href="../footer-header-sass/header.css">
+    <link rel="stylesheet" href="sass/best-seller.css">
+    <title>Girls Fashion</title>
+</head>
+   
+<style>
+       .main-cart{
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+       }
+       .main-cart p{
+            font-size: 2rem;
+            margin-top: 3rem;
+            color: rgb(73, 73, 73);
+            text-transform: lowercase;
+       }
+       .main-cart .cart-btn{
+            background-color: black;
+            color: white;
+            padding: 1rem 2.4rem;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            margin-top: 2.7rem;
+            cursor: pointer;
+            transition: .4s;
+       }
+       .cart-btn:hover{
+           background-color: rgb(251, 252, 253);
+           color: black;
+           font-weight: 600;
+           padding: .8rem 2.2rem;
+           border: 2px solid black;
+       }
+       @media only screen and (max-width: 450px){
+        .main-cart .cart-btn{
+             margin-top: 2rem;
+             font-size: 1.2rem;
+        }
+       }
+</style>
+
+<body>
+
+    <!-- header section  -->
+
+    <section class="header-section">
+
+        <header>
+            <div class="top-section">
+                <div class="top-head">
+                    <a href="" class="logo">Redtag<span>.</span> </a>
+                    <div class="icons-mbl">
+                        <div class="hide-icons">
+                            <a href="">
+                                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#account"
+                                    alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                    alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#shopping-bag"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <form action="">
+                        <input type="search" id="search-bar" placeholder="What are you looking for?">
+                        <label for="search-bar" class="fas fa-search"></label>
+                    </form>
+
+                    <div class="icons-pc">
+                        <a href="/">
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#account"
+                                alt="">
+                        </a>
+                        <a href="/">
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                alt="">
+                        </a>
+                        <a href="/">
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#shopping-bag"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-head">
+                <div class="menu-btn">
+                    <a class="btn" href="index.html">Women</a>
+                    <a class="btn" href="menfashion.html">Men</a>
+                    <a id="active" class="btn" href="girlsfashion.html">Girls</a>
+                    <a class="btn" href="boysfashion.html">Boys</a>
+                    <a class="btn" href="homewarefashion.html">Homeware</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- navbar dropdown section  -->
+
+        <section class="navbar">
+
+            <nav class="wrapper">
+                <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
+                <ul class="tabs-box">
+                    <li onclick="myNewIn()" class="tab">New In
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myBestSeller()" class="tab">Best Sellers
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myWinter()" class="tab">Winter
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myBaby()" class="tab">Baby (0-2yrs)
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myJunior()" class="tab">Junior (2-8yrs)
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="mySenior()" class="tab">Senior (8-14yrs)
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myCollection()" class="tab">Collection
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myShoes()" class="tab">Shoes
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myAccessories()" class="tab">Accessories
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myFragrance()" class="tab">Fragrance
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li onclick="myHotOffer()" id="hot-offer" class="tab">Hot Offers
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                </ul>
+                <div class="icon"><i id="right" class="fa-solid fa-angle-right"></i></div>
+            </nav>
+
+            <!--nav dropdown items section  -->
+
+            <section class="nav-dropdown">
+
+                <!-- NewIn menu list  -->
+
+                <div id="newIn" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">ALL</a></li>
+                            <li><a href="">Baby (0-2yrs)</a></li>
+                            <li><a href="">Junior (2-8yrs)</a></li>
+                            <li><a href="">Senior (8-14yrs)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- best seller menu list  -->
+
+                <div id="best-seller" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">ALL</a></li>
+                            <li><a href="">Baby (0-2yrs)</a></li>
+                            <li><a href="">Junior (2-8yrs)</a></li>
+                            <li><a href="">Senior (8-14yrs)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- winter menu list  -->
+
+                <div id="winter" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">ALL</a></li>
+                            <li><a href="">Clothing</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li><a href="">Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- baby menu list  -->
+
+                <div id="baby" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shops all clothing</a></li>
+                            <li><a href="">New In</a></li>
+                            <li><a href="">Bodysuits & Jumpsuits</a></li>
+                            <li><a href="">Sweateshirts & Hoodies</a></li>
+                            <li><a href="">Kintwear</a></li>
+                            <li><a href="">Dresses</a></li>
+                            <li><a href="">Jeans & Jeggings</a></li>
+                            <li><a href="">Trouser & Leggings</a></li>
+                            <li><a href="">Shorts & Skirts</a></li>
+                            <li><a href="">Tops & T-Shirts</a></li>
+                            <li><a href="">Rompers</a></li>
+                            <li><a href="">Joggers</a></li>
+                            <li><a href="">Coats</a></li>
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Booties & Socks</a></li>
+                            <li><a href="">Blankets & Comforters</a></li>
+                            <li><a href="">Socks & Tights</a></li>
+                            <li><a href="">Bibs & Caps</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- junior menu list  -->
+
+                <div id="junior" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shops all clothing</a></li>
+                            <li><a href="">New In</a></li>
+                            <li><a href="">Dresses & Jumpsuits</a></li>
+                            <li><a href="">Sweateshirts & Hoodies</a></li>
+                            <li><a href="">Kintwear</a></li>
+                            <li><a href="">Dresses</a></li>
+                            <li><a href="">Jeans & Jeggings</a></li>
+                            <li><a href="">Trouser & Leggings</a></li>
+                            <li><a href="">Shorts & Skirts</a></li>
+                            <li><a href="">Tops & T-Shirts</a></li>
+                            <li><a href="">Joggers</a></li>
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Swimwear</a></li>
+                            <li><a href="">Sets</a></li>
+                            <li><a href="">Socks & Tights</a></li>
+                            <li><a href="">Underwear</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- senior menu list  -->
+
+                <div id="senior" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shops all clothing</a></li>
+                            <li><a href="">New In</a></li>
+                            <li><a href="">Dresses & Jumpsuits</a></li>
+                            <li><a href="">Sweateshirts & Hoodies</a></li>
+                            <li><a href="">Kintwear</a></li>
+                            <li><a href="">Dresses</a></li>
+                            <li><a href="">Jeans & Jeggings</a></li>
+                            <li><a href="">Trouser & Leggings</a></li>
+                            <li><a href="">Shorts & Skirts</a></li>
+                            <li><a href="">Tops & T-Shirts</a></li>
+                            <li><a href="">Joggers</a></li>
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Swimwear</a></li>
+                            <li><a href="">Sets</a></li>
+                            <li><a href="">Socks & Tights</a></li>
+                            <li><a href="">Underwear</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- collection menu list  -->
+
+                <div id="collection" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shop all collection</a></li>
+                            <li><a href="">Best Sellers</a></li>
+                            <li><a href="">Pretty in Pink</a></li>
+                            <li><a href="">Character</a></li>
+                            <li><a href="">Dress in Style</a></li>
+                            <li><a href="">Activewear</a></li>
+                            <li><a href="">Denimwear</a></li>
+                            <li><a href="">Basics</a></li>
+                            <li><a href="">Festive Collection</a></li>
+                            <li><a href="">Sets</a></li>
+                            <li><a href="">Swimwear</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- shoes menu list  -->
+
+                <div id="shoes" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shop all shoes</a></li>
+                            <li><a href="">New In</a></li>
+                            <li><a href="">New Born (0-18mnths)</a></li>
+                            <li><a href="">Infant (1-3yrs)</a></li>
+                            <li><a href="">Junior (3-5yrs)</a></li>
+                            <li><a href="">Senior (5-14yrs)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- accessories menu list  -->
+
+                <div id="accessories" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shop all accessories</a></li>
+                            <li><a href="">New In</a></li>
+                            <li><a href="">Baby Accessories</a></li>
+                            <li><a href="">Car Seats & Strollers</a></li>
+                            <li><a href="">Bags & Wallets</a></li>
+                            <li><a href="">Caps & Hats</a></li>
+                            <li><a href="">Scarves</a></li>
+                            <li><a href="">Hair Accessories</a></li>
+                            <li><a href="">Jewellery</a></li>
+                            <li><a href="">Sunglasses</a></li>
+                            <li><a href="">Toys</a></li>
+                            <li><a href="">Watches & Wrist Bands</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- perfume & frangrance menu list  -->
+
+                <div id="fragrance" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shop all perfume & Frangrance</a></li>
+                            <li><a href="">Perfumes</a></li>
+                            <!-- <li><a href="">Limited Collection</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- hot offer menu list  -->
+
+                <div id="hotOffer" class="container">
+                    <div class="all-lists">
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">shops all sale</a></li>
+                            <li><a href="">Baby (0-2yrs)</a></li>
+                            <li><a href="">Junior (2-8yrs)</a></li>
+                            <li><a href="">Senior (8-14yrs)</a></li>
+                            <li><a href="">Clothing</a></li>
+                            <li><a href="">Shoes</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li><a href="">SAR 10</a></li>
+                            <li><a href="">SAR 15</a></li>
+                            <li><a href="">SAR 20</a></li>
+                        </ul>
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">all</a></li>
+                            <li><a href="">Women</a></li>
+                            <li><a href="">Men</a></li>
+                            <li><a href="">Boys</a></li>
+                            <li><a href="">Girls</a></li>
+                            <li><a href="">Homewear</a></li>
+                        </ul>
+                        <ul class="menu-list">
+                            <li><a class="menu-heading" href="">Buy 2 save more</a></li>
+                            <li><a href="">All</a></li>
+                            <li><a href="">2 FOR 37</a></li>
+                            <li><a href="">2 FOR 49</a></li>
+                            <li><a href="">2 FOR 69</a></li>
+                            <li><a href="">2 FOR 79</a></li>
+                            <li><a href="">2 FOR 89</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- cart button section  -->
+
+    <div class="main-cart">
+          <p><span>Y</span>our Cart is Currently Empty</p>
+          <a href="">
+            <button class="cart-btn">Continue Shopping</button>
+          </a>
+    </div>
+
+    <script src="js/best-seller.js"></script>
+</body>
+</html>
